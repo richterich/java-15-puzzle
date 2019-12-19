@@ -1,0 +1,20 @@
+# Folders
+.idea
+
+.gradle
+gradle/
+build/
+out/
+
+# Files
+*.iml
+.DS_Store
+build.gradle
+gradlew
+gradlew.bat
+settings.gradle
+gradle-app.setting
+.gradletasknamecache
+build.properties
+junit*.properties
+IgnoreLexer.java~
