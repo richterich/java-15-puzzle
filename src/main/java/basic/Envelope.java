@@ -1,4 +1,4 @@
-package puzzle;
+package basic;
 
 public interface Envelope {
     void seal(int[] board);

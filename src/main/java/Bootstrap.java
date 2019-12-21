@@ -1,6 +1,5 @@
-import basic.ArrayAmbulance;
+import basic.*;
 import basic.puzzle.*;
-import puzzle.Envelope;
 import puzzle.Sensor;
 import singleplayer.SinglePlayer;
 import terminal.OutTerminalTurn;
@@ -13,7 +12,7 @@ public class Bootstrap {
         final int attemptsAmount = -1;
         final int[] board = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 0};
         final BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-        final ArrayBoard arrayBoard = new ArrayBoard(board);
+        final SentBoard arrayBoard = new ArraySentBoard(board);
         final Sensor sensor = new BaseSensor(bufferedReader);
         final Envelope envelope = new ArrayEnvelope();
 

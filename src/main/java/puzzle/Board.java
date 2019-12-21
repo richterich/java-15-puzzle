@@ -8,6 +8,4 @@ public interface Board {
     void shuffle();
 
     void rotate();
-
-    void stamp(Envelope envelope);
 }

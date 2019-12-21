@@ -1,7 +1,6 @@
 package basic.puzzle;
 
 import puzzle.Board;
-import puzzle.Envelope;
 
 import java.util.Random;
 
@@ -77,11 +76,6 @@ public class ArrayBoard implements Board {
             rotate[index - 1] = value;
         }
         System.arraycopy(rotate, 0, board, 0, board.length);
-    }
-
-    @Override
-    public void stamp(Envelope envelope) {
-        envelope.seal(board);
     }
 
     @Override

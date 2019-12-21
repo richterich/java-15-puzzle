@@ -1,23 +1,23 @@
 package singleplayer;
 
-import puzzle.Board;
-import puzzle.Envelope;
+import basic.SentBoard;
+import basic.Envelope;
 import puzzle.Game;
 import puzzle.decorated.AbstractGame;
 
 public class SinglePlayer extends AbstractGame {
-    protected final Board board;
+    protected final SentBoard sentBoard;
     private final Envelope envelope;
 
-    public SinglePlayer(Game game, Board board, Envelope envelope) {
+    public SinglePlayer(Game game, SentBoard sentBoard, Envelope envelope) {
         super(game);
-        this.board = board;
+        this.sentBoard = sentBoard;
         this.envelope = envelope;
     }
 
     @Override
     public void load() {
         super.load();
-        board.stamp(envelope);
+        sentBoard.stamp(envelope);
     }
 }

@@ -4,7 +4,6 @@ import ai.Pathfinder;
 import basic.ai.ArrayBoardStamp;
 import basic.ai.ArrayPathfinder;
 import basic.ai.ArrayTrack;
-import puzzle.Envelope;
 
 public class ArrayAmbulance implements Ambulance {
     private final Envelope envelope;

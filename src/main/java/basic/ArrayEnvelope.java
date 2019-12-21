@@ -1,6 +1,4 @@
-package basic.puzzle;
-
-import puzzle.Envelope;
+package basic;
 
 public class ArrayEnvelope implements Envelope {
     private final int[] boardStamp = new int[16];
